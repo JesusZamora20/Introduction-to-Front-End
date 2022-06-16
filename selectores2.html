@@ -18,8 +18,11 @@
         div + section{
             background: palevioletred;
         }
-        div ~ p{
+        section ~ p{
             color: powderblue;
+        }
+        p ~ div{
+            color: red;
         }
     </style>
 </head>
@@ -30,8 +33,8 @@
             <div class ="es">Es</div>
         </div>
     </div>
-    <p>Clase de selectores</p>
     <section>Es lo mejor</section>
+    <p>Clase de selectores</p>
     <div>Master</div>
 </body>
 </html>
