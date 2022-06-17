@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colapso de margenes</title>
+    <style>
+        /* .container{
+            display: flex;
+            flex-direction: column;
+        } */
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .container .item:nth-child(1){
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        .container .item:nth-child(2){
+            grid-column: 1/2;
+            grid-row: 2 /2;
+        }
+
+        div{
+            margin: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="item">Platzi</div>
+        <div class="item">Master</div>
+    </section>
+    
+</body>
+</html>
